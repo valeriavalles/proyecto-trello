@@ -9,11 +9,17 @@ window.addEventListener('load', function() {
   
   boton.addEventListener('click', function(event) {
     if (area.value) {
+      var tex = document.createElement('textarea');
       var li = document.createElement('li');
       var link = document.createElement('p');
+      var bot = document.createElement('button');
+      bot.style = 'width:50px';
       link.textContent = area.value;
+      bot.textContent = 'Añadir';
       li.appendChild(link);
       lista.appendChild(li);
+      li.appendChild(tex);
+      li.appendChild(bot);
       area.value = '';
     }
   });

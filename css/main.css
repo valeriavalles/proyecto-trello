@@ -184,3 +184,29 @@ section {
     margin: 5px;
     border: none;
 }
+button {
+  height: 30px;
+  width: 80px;
+  position: relative;
+  /*top:30px; 
+  right: 165px;*/
+  background:#5AAC44; 
+  color: #fff;
+  margin: 5px;
+  border: none;
+}
+li {
+    outline: 1px solid blue;
+    display: inline-block;
+    text-align: center;
+    width: 23.5%;
+    position: relative;
+    right: 27px;
+    background: #E2E4E6;
+    
+}
+textarea {
+    width: 90%;
+    height: 70px;
+    margin: 10px;
+}
