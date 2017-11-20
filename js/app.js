@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
   /* llamando a los id para los eventos*/ 
-  var area = document.getElementById('textarea');
+  var textos = document.getElementById('textarea');
   var boton = document.getElementById('save');
   var lista = document.getElementById('container-links');
   var formu = document.getElementById('ancla');// al que aplico el click
@@ -8,21 +8,21 @@ window.addEventListener('load', function() {
   var bot = document.getElementsByTagName('button');
   var tex = document.getElementById('textarea');
       
-  
+  // Añadir listas //
   boton.addEventListener('click', function(event) {
-    if (area.value) {
+    if (textos.value) {
       var tex = document.createElement('textarea');
       var li = document.createElement('li');
       var link = document.createElement('p');
       var bot = document.createElement('button');
       bot.style = 'width:50px';
-      link.textContent = area.value;
+      link.textContent = textos.value;
       bot.textContent = 'Añadir';
       li.appendChild(link);
       lista.appendChild(li);
       li.appendChild(tex);
       li.appendChild(bot);
-      area.value = '';
+      textos.value = '';
     }
   });
   // bot.addEventListener('click', enviar);//
@@ -38,7 +38,7 @@ window.addEventListener('load', function() {
     
     tex.value = '';
   }*/
-
+  // desaparecer al hacer click en añadir //
   formu.addEventListener('click', vale);
   function vale() {
     conte.style.display = 'block';
