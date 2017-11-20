@@ -4,33 +4,35 @@ body {
     background: rgba(58, 146, 228, 0.986);
 }
 #container {
-    outline: 1px solid black;
     background: #026AA7;
     
 }
 .seach {
-    outline: 1px solid black; 
+    outline: 1px solid #f3f3f3; 
     display: inline-block;
     position: relative;
-    height: 35px;
-    top: 30px;
-    background: rgba(255,255,255,.3);
-    
-    
-    
+    border-radius: 10px;
+   /* height: 35px;*/
+    /*width: 14%;*/
+    /*top: 30px;*/
+   /* background: rgba(255,255,255,.3);*/
+    /* background: #026AA7;*/
 }
-/*.con1 {
-    display: inline-block;
-    outline: 1px solid rosybrown;
-}*/
-input {
-    width: 100%;
-    height: 32px;
+
+.seach:focus {
+    background: #fff;
+}
+.seach input:focus {
+    background: #fff;
+}
+.seach input {
+    height: 30px;
     border-radius: 5px;
-    
+    display: inline-block;
+    border: none;
+    background: #026AA7;
 }
 .ico {
-    outline: 1px solid red;
     width: 10%;
     height: 35px;
     display: inline-block;
@@ -50,55 +52,65 @@ input {
     color: #fff;
 }
 .trello {
-    outline: 1px solid green;
     display: inline-block;
-    height: 50px;
+    height: 30px;
    position: relative;
+   margin: 0;
+   padding: 0;
    left: 200px;
-   
+   color: #fff;
     
-    
+}
+.icon-trello {
+    font-size: 25px;
 }
 
 .icon-search {
-  outline:1px solid purple; 
+ 
   position: relative;
-  bottom: 30px;
+  top: 5px;
+ /* left: 160px;*/
+  font-size: 25px;
+  color: #fff;
+  
 
 }
 #container-icono {
-    outline: 1px solid blue;
     width: 200px;
-    /*+display: inline-block;*/
     float: right;
     position: relative;
-    top: 20px;
-    
+    height: 60px;
+    margin-right: 10px;  
+}
 
-    
-}
-.lista {
-    outline: 1px solid black;
-    display: inline-block;
-    
-}
 a {
-    outline: 1px solid gold;
     text-decoration: none;
     display: inline-block;
     color: #fff;
 }
-.icono {
+#lista .icono {
     list-style: none;
     display: inline-block;
     font-size: 25px;
-    margin-left: 7px;
-    
-    
+   /* margin-left: 7px;*/   
+    text-align: none;
+    background: rgba(255,255,255,.3);
+    margin-right: 5px;
+}
+ #lista #user {
+    float: right;
+    position: relative;
+    left: 4px;
+    bottom: 30px;
+    border-radius: 35px;
+    /*background: #fff;*/
+    color: black;
 }
 h2 {
-    outline: 1px solid red;
     display: inline-block;
+    font-family: 'Yellowtail', cursive;
+    font-size: 30px;
+
 }
 .icon-info {
     font-size: 13px;
@@ -106,35 +118,30 @@ h2 {
     position: relative;
     bottom: 5px;
 }
-#info {
-    outline: 1px solid red;
-    border-radius: 50px;
-}
+
 #user a {
     border-radius: 10px;
 }
 /*section*/
 section {
-    outline: 1px solid black;
     font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
     
 }
 .tab {
-    outline: 1px solid yellow;
     display: inline-block;
     margin: 10px;
     font-weight: 650;
+    color: #fff;
 }
 
 
 .tab1 {
-    outline: 1px solid green;
     display: inline-block;
     margin: 10px;
+    color: #fff;
     
 }
 .menu {
-    outline: 1px solid blue;
     float: right;
     margin: 10px;
 }
@@ -170,7 +177,6 @@ section {
     display: none;
 }
 #save {
-    outline: 1px solid black;
     width: 30%;
     margin: 3px;
     margin-left: 6px;
@@ -183,6 +189,7 @@ section {
     width: 90%;
     margin: 5px;
     border: none;
+    height: 40px;
 }
 button {
   height: 30px;
@@ -196,13 +203,14 @@ button {
   border: none;
 }
 li {
-    outline: 1px solid blue;
     display: inline-block;
     text-align: center;
     width: 23.5%;
     position: relative;
     right: 27px;
     background: #E2E4E6;
+    border-radius: 5px;
+    margin-right: 10px;
     
 }
 textarea {
